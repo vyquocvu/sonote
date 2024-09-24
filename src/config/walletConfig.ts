@@ -2,13 +2,13 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig } from "wagmi";
-import { optimismSepolia } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import { viction } from '../utils/chain/viction'
 // import { alchemyProvider } from "wagmi/providers/alchemy";
 
 const { chains, publicClient } = configureChains(
   // More chains can be added here
-  [optimismSepolia],
+  [viction],
   [
     // Input your alchemy key or use some other provider from wagmi/providers, publicProvider is unreliable
     // alchemyProvider({apiKey: "Your Api Key"}),
